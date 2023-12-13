@@ -32,7 +32,6 @@ public class CompensationServiceImpl implements CompensationService {
             throw new RuntimeException("Invalid employeeId: " + id);
         }
 
-        compensation.setEmployee(employee);
         compensationRepository.insert(compensation);
 
         return compensation;
